@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Calculus (Limits, Derivatives & Integrals)",
+    "students": "1,250 Students",
+    "duration": "40+ Hours",
+    "price": "Free",
+    "image": "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=1200&q=80&auto=format&fit=crop",
+    "bg": "bg-indigo-100",
+    "category": "Mathematics"
+  },
+  {
+    "id": 2,
+    "title": "Physics (Mechanics, Waves & Thermodynamics)",
+    "students": "980 Students",
+    "duration": "35+ Hours",
+    "price": "Free",
+    "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&q=80&auto=format&fit=crop",
+    "bg": "bg-sky-100",
+    "category": "Science"
+  },
+  {
+    "id": 3,
+    "title": "Statistics (Probability & Data Analysis)",
+    "students": "860 Students",
+    "duration": "30+ Hours",
+    "price": "Free",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop",
+    "bg": "bg-emerald-100",
+    "category": "Mathematics"
+  },
+  {
+    "id": 4,
+    "title": "English Language (Grammar, Writing & Speaking)",
+    "students": "1,400 Students",
+    "duration": "25+ Hours",
+    "price": "Free",
+    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80&auto=format&fit=crop",
+    "bg": "bg-amber-100",
+    "category": "Language"
+  },
+  {
+    "id": 5,
+    "title": "Arabic Language (Reading, Writing & Conversation)",
+    "students": "720 Students",
+    "duration": "30+ Hours",
+    "price": "Free",
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80",
+    "bg": "bg-rose-100",
+    "category": "Language"
+  },
+  {
+    "id": 6,
+    "title": "Web Development (HTML, CSS, JavaScript & React)",
+    "students": "1,100 Students",
+    "duration": "45+ Hours",
+    "price": "Free",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop",
+    "bg": "bg-violet-100",
+    "category": "Technology"
+  }
+]
