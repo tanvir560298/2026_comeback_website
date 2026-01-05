@@ -62,7 +62,7 @@ export default function PortfolioLanding() {
 
               {/* Profile Image */}
               {/* Profile Image */}
-              <div className="relative z-10 h-[420px] w-[320px] overflow-hidden rounded-l-full bg-[#F6F7FB] flex items-center justify-center">
+              <div className="relative z-10 h-105 w-[320px] overflow-hidden rounded-l-full bg-[#F6F7FB] flex items-center justify-center">
                 <img
                   src={profile}
                   alt="Tanvir Ahmad"

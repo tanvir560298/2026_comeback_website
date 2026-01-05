@@ -1,32 +1,16 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { signupEmail } from "../auth/authService";
+import { Link } from "react-router-dom";
 import logo from "../assets/New Project.jpg";
 import nameImg from "../assets/New name.jpg";
 
 export default function Signup() {
-  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState(""); // UI only (Firebase email/pass এ লাগে না)
   const [password, setPassword] = useState("");
   const [show, setShow] = useState(false);
-  const [err, setErr] = useState("");
-  const [loading, setLoading] = useState(false);
 
-  const handleSignup = async (e) => {
-    e.preventDefault();
-    setErr("");
-    setLoading(true);
-    try {
-      await signupEmail(email, password);
-      navigate("/");
-    } catch (e) {
-      setErr(e.message);
-    } finally {
-      setLoading(false);
-    }
-  };
 
+  
   return (
     <div className="min-h-screen bg-slate-100 relative overflow-hidden">
       {/* background (match your hero vibe) */}
@@ -65,7 +49,7 @@ export default function Signup() {
               Sign up to access courses, notes and practice resources.
             </p>
 
-            <form onSubmit={handleSignup} className="mt-8 space-y-5">
+            <form className="mt-8 space-y-5">
               {/* Email */}
               <div>
                 <label className="text-xs font-bold text-slate-700">Email</label>
@@ -127,17 +111,12 @@ export default function Signup() {
                 </div>
               </div>
 
-              {err && (
-                <div className="text-sm text-red-600 font-semibold bg-red-50 border border-red-200 p-3 rounded-xl">
-                  {err}
-                </div>
-              )}
-
+              
               <button
-                disabled={loading}
+                
                 className="w-full rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold py-3.5 transition disabled:opacity-60"
               >
-                {loading ? "Creating..." : "Sign up"}
+                
               </button>
 
               <p className="text-[11px] text-slate-500 text-center">

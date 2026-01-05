@@ -1,9 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import courses from "../data/courses.json";
 
 const CourseCard = ({ course }) => {
+  const navigate = useNavigate();
+
+  const goToCourse = () => {
+    if (course.path) navigate(course.path);
+  };
+
   return (
-    <div className="rounded-2xl bg-white shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition">
+    <div
+      onClick={goToCourse}
+      className="cursor-pointer rounded-2xl bg-white shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition"
+    >
       {/* Image area */}
       <div className={`${course.bg}`}>
         <div className="relative h-40 w-full overflow-hidden">
@@ -29,35 +39,23 @@ const CourseCard = ({ course }) => {
         <div className="mt-4 flex items-center justify-between">
           <p className="text-sm font-extrabold text-slate-900">{course.price}</p>
 
+          {/* Open Course Button */}
           <button
-            className="h-9 w-9 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition grid place-items-center"
-            title="Add to cart"
+            onClick={(e) => {
+              e.stopPropagation(); // card click conflict বন্ধ
+              goToCourse();
+            }}
+            disabled={!course.path}
+            className={`px-4 py-2 rounded-lg text-xs font-extrabold transition
+              ${
+                course.path
+                  ? "bg-indigo-600 text-white hover:bg-indigo-500"
+                  : "bg-slate-200 text-slate-500 cursor-not-allowed"
+              }`}
+            title={course.path ? "Open course" : "No page linked yet"}
             type="button"
           >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="text-slate-700"
-            >
-              <path
-                d="M6 6h15l-2 9H8L6 6Z"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M6 6 5 3H2"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-              />
-              <path
-                d="M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
-                fill="currentColor"
-              />
-            </svg>
+            {course.path ? "Open" : "Coming"}
           </button>
         </div>
       </div>
@@ -75,8 +73,7 @@ const FeaturedCourses = () => {
             Featured <span className="text-emerald-600">Course</span>
           </h2>
           <p className="mt-3 max-w-xl mx-auto text-sm sm:text-[15px] text-slate-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore veniam...
+            Choose a course and start learning with videos, notes, and homework.
           </p>
         </div>
 
