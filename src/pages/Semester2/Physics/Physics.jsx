@@ -11,7 +11,8 @@ const modules = [
         title: "Chapter 1 Notes",
         duration: "PDF",
         // ✅ IMPORTANT: put pdf inside /public and use like this:
-        fileUrl: "public/Physics_pdf_holder/Scanned_20260110-1201.pdf",
+        fileUrl: "/Physics_pdf_holder/Scanned_20260110-1201.pdf",
+
       },
       // later you can add video/hw like this:
       // {
