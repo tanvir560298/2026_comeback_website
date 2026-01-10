@@ -1,5 +1,5 @@
 import React from "react";
-import HeroAnimated from "./HeroAnimated";
+import HeroAnimated from "../HeroAnimated"
 
 const Hero = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/New Project.jpg";
-import name from "../assets/New name.jpg";
+import logo from "../../assets/New Project.jpg";
+import name from "../../assets/New name.jpg";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

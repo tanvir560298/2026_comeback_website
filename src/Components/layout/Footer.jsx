@@ -1,7 +1,4 @@
 import React from "react";
-import logo from "../assets/New Project.jpg";
-import name from "../assets/New name.jpg";
-
 const Footer = () => {
   return (
     <footer className="bg-linear-to-r from-violet-900 via-indigo-700 to-purple-600 text-white">
@@ -14,7 +11,7 @@ const Footer = () => {
               {/* Logo */}
               <div className="h-12 w-12 rounded-xl bg-white/10 border border-white/15 overflow-hidden flex items-center justify-center">
                 <img
-                  src={logo}
+                  src=""
                   alt="TA Logo"
                   className="h-10 w-10 object-contain"
                 />
@@ -23,7 +20,7 @@ const Footer = () => {
               {/* Name */}
               <div className="h-12 px-3 rounded-xl bg-white/10 border border-white/15 flex items-center">
                 <img
-                  src={name}
+                  src=""
                   alt="TA Learning Platform"
                   className="h-7 object-contain"
                 />

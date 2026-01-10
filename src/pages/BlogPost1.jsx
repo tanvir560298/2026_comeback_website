@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../assets/blog/hero-blog-1.png";
+
 
 export default function BlogPost1() {
   return (
@@ -50,7 +50,7 @@ export default function BlogPost1() {
               <div className="overflow-hidden rounded-2xl bg-black/20 p-2 sm:p-3">
                 <div className="aspect-[16/12] w-full overflow-hidden rounded-2xl">
                   <img
-                    src={hero}
+                    src=""
                     alt="Web Development with HTML"
                     className="h-full w-full object-cover"
                     loading="lazy"
