@@ -16,7 +16,7 @@ import Calculus2 from "./pages/Semester2/Calculus2/Calculus2";
 
 // ✅ PrivateRoute
 import PrivateRoute from "./routes/PrivateRoute";
-import Physics from "./pages/Semester2/Physics/Physics";
+// import Physics from "./pages/Semester2/Physics/Physics";
 export default function App() {
   return (
     <Routes>
@@ -52,14 +52,14 @@ export default function App() {
           </PrivateRoute>
         }
       />
-      <Route
+      {/* <Route
         path="/physics"
         element={
           <PrivateRoute>
             <Physics/>
           </PrivateRoute>
         }
-      />
+      /> */}
 
       {/* 404 */}
     </Routes>
