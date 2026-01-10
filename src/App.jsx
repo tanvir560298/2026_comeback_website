@@ -17,7 +17,6 @@ import Calculus2 from "./pages/Semester2/Calculus2/Calculus2";
 // ✅ PrivateRoute
 import PrivateRoute from "./routes/PrivateRoute";
 import Physics from "./pages/Semester2/Physics/Physics";
-
 export default function App() {
   return (
     <Routes>
